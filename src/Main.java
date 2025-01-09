@@ -2,6 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        //Задание 1
         Dog dogBobik = new Dog("Бобик");
         Cat catMurzik = new Cat("Мурзик");
         Cat catBarsik = new Cat("Барсик");
@@ -32,6 +34,31 @@ public class Main {
         System.out.println("Всего животных: " + Animal.getAnimalCount());
         System.out.println("Всего собак: " + Dog.getDogCount());
         System.out.println("Всего котов: " + Cat.getCatCount());
+
+        //Задание 2
+        Circle circle = new Circle(5);
+        circle.setFillColor("Синий");
+        circle.setBorderColor("Черный");
+
+        // Создаем прямоугольник
+        Rectangle rectangle = new Rectangle(4, 7);
+        rectangle.setFillColor("Красный");
+        rectangle.setBorderColor("Белый");
+
+        // Создаем треугольник
+        Triangle triangle = new Triangle(3, 4, 5);
+        triangle.setFillColor("Зеленый");
+        triangle.setBorderColor("Желтый");
+
+        // Выводим характеристики фигур
+        System.out.println("Круг:");
+        circle.printCharacteristics();
+
+        System.out.println("\nПрямоугольник:");
+        rectangle.printCharacteristics();
+
+        System.out.println("\nТреугольник:");
+        triangle.printCharacteristics();
 
     }
 }
