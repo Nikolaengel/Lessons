@@ -106,7 +106,7 @@ public class CommunicationServicesTest {
         try {
 
             WebElement cookieBanner = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.className("cookie__wrapper") // Замените на реальный ID окна с куки
+                    By.className("cookie__wrapper")
             ));
 
             WebElement acceptButton = cookieBanner.findElement(By.id("cookie-agree"));

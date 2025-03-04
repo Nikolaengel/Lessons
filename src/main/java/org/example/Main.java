@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Hello, World!");
     }
 
-    // Логика страницы MtsOnlinePaymentPage
+
     private WebDriver driver;
 
     // Локаторы
@@ -61,6 +61,7 @@ public class Main {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
 
     // Методы для работы с элементами страницы
     public void selectOption(String optionText) {
